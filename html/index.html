@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Form</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="..//js/jquery.js"></script>
+
+</head>
+<body>
+    <div id="main">
+        <form action="" id="form">
+
+            <div class="head">Form One</div>
+            <div class="tin">Name</div>
+            <div class="inp">
+                <input type="text" id="name"> 
+                <span id="namew">This is a required field</span>
+            </div>
+            <div class="tin">Email</div>
+            <div class="inp">
+                <input type="email" id="email">
+                <span id="emailw">This is a required field</span>
+            </div>
+            <div class="tin">Password</div>
+            <div class="inp">
+                <input type="password" id="password">
+                <span id="passw">This is a required field</span>
+            </div>
+            <div class="tin">Address</div>
+            <div class="inp">
+                <textarea id="textarea" placeholder="Enter your address"></textarea>
+                <span id="textareawarning">This is a required field</span>
+            </div>
+            <div class="tin">Gender</div>
+            <div class="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+                <span id="genderw">This is a required field</span>
+            </div>
+            <div class="tin">Hobby</div>
+            <div class="hobby">
+                <label for="reading">Reading
+                    <input type="checkbox" name="hobby" id="reading">
+                </label>
+                <label for="swimming">Swimming
+                    <input type="checkbox" name="hobby" id="swimming">
+                </label>
+                <label for="cooking">Cooking
+                    <input type="checkbox" name="hobby" id="cooking">
+                </label>
+                <label for="dancing">Dancing
+                    <input type="checkbox" name="hobby" id="dancing">
+                </label>
+                <div class="checkboxwarning" id="checkboxwarning">This is a required field</div>
+            </div>
+        </form>
+                <div class="button">
+            <button onclick="validate()">Submit</button>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
